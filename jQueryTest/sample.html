@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>CSSの呼び方の違い（友達バージョン）</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+
+    /* 1. タグ名指定 → <header> が赤 */
+    header {
+      background-color: pink;
+      padding: 10px;
+      border: 2px solid red;
+    }
+
+    /* 2. クラス名指定（ドット）→ class="header" が青 */
+    .header {
+      background-color: lightblue;
+      padding: 10px;
+      border: 2px solid blue;
+    }
+
+    /* 3. ID名指定（シャープ）→ id="header" が緑 */
+    #header {
+      background-color: lightgreen;
+      padding: 10px;
+      border: 2px solid green;
+    }
+
+    /* キャラ画像のサイズ */
+    img {
+      width: 80px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSSの呼び方の違い（友達を呼ぶ例え）</h1>
+
+  <!-- タグ名 -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/120px-User-avatar.svg.png" alt="キャラ1">
+    ① <strong>タグ名</strong>で呼ぶ → 「<span style="color:red">帽子</span>に 'header' って書いてある人、全員来て！」（赤色）
+  </header>
+
+  <!-- クラス名 -->
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/120px-User-avatar.svg.png" alt="キャラ2">
+    ② <strong>クラス名</strong>で呼ぶ（ドット）→ 「<span style="color:blue">名札</span>に 'header' って書いてある人、来て！」（青色）
+  </div>
+
+  <!-- ID名 -->
+  <div id="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/120px-User-avatar.svg.png" alt="キャラ3">
+    ③ <strong>ID名</strong>で呼ぶ（シャープ）→ 「<span style="color:green">あだ名</span>が 'header' の君だけ来て！」（緑色）
+  </div>
+
+</body>
+</html>
